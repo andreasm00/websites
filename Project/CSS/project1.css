@@ -4,14 +4,16 @@ header {
 body {
     background-color: #343434;
     color: #fff;
-    width: 50%;
     font-family: 'Gandhi Sans', sans-serif;
+    margin: auto;
+
     
 }
 p {
     margin: 10px;
     padding: 5px;
     font-size: 16px;
+
 }
 h1{
     font-size: 36px;
@@ -73,6 +75,7 @@ li a:hover:not(.active) {
   
 input[type=text],
 input[type=email],
+input[type=submit],
 textarea {
     width: 20%;
     padding: 6px 10px;
