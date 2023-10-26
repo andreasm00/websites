@@ -176,3 +176,10 @@ li a:hover:not(.active) {
     background-color: #811331;
     
 }
+
+.footer-item-1 {
+    text-align: left;
+}
+.footer-item-2 {
+    text-align: center;
+}
