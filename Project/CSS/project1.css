@@ -48,11 +48,8 @@ h4 {
 }
 
   
-input[type=text],
-input[type=email],
-input[type=submit],
-textarea {
-    width: 20%;
+.form-control,
+.form-select {   
     padding: 6px 10px;
     margin: 8px 0;
     font-size: 12px;
@@ -211,5 +208,16 @@ li a:hover:not(.active) {
 }
 .card-title,
 .card-text {
+    text-align: center;
+}
+
+
+.btn {
+    background-color: #DC143C;
+}
+.btn:hover {
+    background-color: #811331;
+}
+.contact-title {
     text-align: center;
 }

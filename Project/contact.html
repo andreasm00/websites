@@ -12,6 +12,7 @@
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
      <link rel="stylesheet" href="CSS/project1.css">
+     
 </head>
 <body>
     <nav class="navbar navbar-expand-lg">
@@ -33,40 +34,90 @@
         </div>
     </nav>
       
-      <form>
-        <div>
-            <label for="naam">Naam</label>
-        </div>
-        <div>
-            <input type="text" name="naam" id="naam" placeholder="Naam" required>
-        </div>
+      
+    <main class="container-contact">
+        <h1 class="contact-title">Contacteer mij!</h1>
+        <div class="row">
 
-        <div>
-            <label for="mail">E-mailadres</label>
-        </div>
-        <div>
-            <input type="email" name="mail" id="mail" placeholder="E-mailadres" required>
-        </div>
+            <div class="col-md-4">
+                
+            </div>
 
-        <div>
-            <label for="onderwerp">Onderwerp</label>
-        </div>
-        <div>
-            <input type="text" name="onderwerp" id="onderwerp" placeholder="Onderwerp" required>
-        </div>
+            <div class="col-md-4">
+                <form action=" " class="needs-validation" novalidate>
+                    <div class="mb-3">
+                        <label class="form-label" for="voornaam">Voornaam</label>
+                        <input type="text" class="form-control" id="voornaam" placeholder="Voornaam" required>
+                        <div class="invalid-feedback">Geef een voornaam in.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="familienaam">Familienaam</label>
+                        <input type="text" class="form-control" id="familienaam" placeholder="Familienaam" required>
+                        <div class="invalid-feedback">Geef een familienaam in.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="email">E-mailadres</label>
+                        <input type="Email" class="form-control" id="email" placeholder="E-mailadres" required>
+                        <div class="invalid-feedback">Geef een geldig e-mailadres in.</div>
+                    </div>
+        
+                    <div class="mb-3">
+                        <label class="form-label" for="onderwerp">Onderwerp</label>
+                        <input type="text" class="form-control" id="onderwerp" placeholder="Onderwerp">
+                        <div class="invalid-feedback">Geef een onderwerp in.</div>
+                    </div>
+                    
+        
+                    <div class="mb-3">
+                        <label class="form-label" for="interesse">Kies een skill: </label>
+                        <select class="form-select" id="interesse">
+                          <option hidden disabled selected value> -- selecteer een optie -- </option>
+                          <option value="html">HTML</option>
+                          <option value="css">CSS</option>
+                          <option value="c#">C#</option>
+                          <option value="python">Python</option>
+                          <option value="sql">SQL</option>
+                          <option value="linux">Linux</option>
+                        </select> 
+                    </div>
+        
+                    <div class="mb-3">
+                        <label for="vraag" class="form-label">Vraag</label>
+                        <textarea id="vraag" class="form-control" cols="50" rows="5" required placeholder="Stel je vraag hier"></textarea>
+                        <div class="invalid-input">Geef je vraag in.</div>
+                    </div>
+                    
+        
+                    <button type="submit" class="btn">Versturen</button>
+                </form>
+                    
+            </div>
+        
+        
+    </main>
+    <script>
+        // Self-executing function
+        (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
 
-        <div>
-            <label for="vraag">Vraag</label>
-        </div>
-        <div>
-            <textarea id="vraag" name="vraag" cols="50" rows="5" required placeholder="Stel je vraag hier"></textarea>
-        </div>
-        <div>
-            <input type="submit" value="Versturen">
-        </div>
-
-      </form>
-
+    
       <footer class="footer">   
         <div class="row">
           <div class="col-md-6">
