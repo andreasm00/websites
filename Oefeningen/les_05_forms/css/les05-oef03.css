@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+fieldset label{
+    font-size: 12px;
+    text-align: left;
+}
+legend {
+    background-color: maroon;
+    color: #fff;
+    padding: 6px 10px;
+}
+fieldset,
+input[type=submit] {
+    background: antiquewhite;
+    margin: 10px;
+    padding: 10px;
+    font-size: 25px;
+    width: 25%;
+    box-sizing: border-box;
+}

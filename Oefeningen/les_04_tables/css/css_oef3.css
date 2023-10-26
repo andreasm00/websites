@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+table {
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+td,
+th {
+    border: 1px solid black;
+    margin: 4px;
+    text-align: center;
+}
+th {
+    background-color: lightgray;
+}
+table.title {
+    background-color: lightgray;
+}
+.width200 {
+    width: 200px;
+}
+.width100 {
+    width: 100px;
+}
+.red_bg {
+    background-color: red;
+}
+.green_bg {
+    background-color: green;
+}
+caption {
+    font-size: 22px;
+    padding: 10px;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oefening 1</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"> 
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+        body {
+            background-image: url('./images/kompas.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        .label {
+            font-family: 'Dancing Script', cursive;
+            font-size: 30px;
+            color: #fff;
+        }
+        .noord {
+            position: fixed;
+            top: 10px;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+        .zuid {
+            position: fixed;
+            bottom: 10px;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+        .west {
+            position: fixed;
+            left: 10px;
+            top: 50%;
+            transform: translate(0,-50%);
+        }
+        .oost {
+            position: fixed;
+            right: 10px;
+            top: 50%;
+            transform: translate(0,-50%);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="compass"></div>
+    <div class="label noord">Noord</div>
+    <div class="label zuid">Zuid</div>
+    <div class="label west">West</div>
+    <div class="label oost">Oost</div>
+</body>
+</html>
