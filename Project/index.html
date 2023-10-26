@@ -4,14 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Startpagina</title>
-    <link rel="stylesheet" href="CSS/project1.css">
+    
     <link href="https://fonts.cdnfonts.com/css/gandhi-sans" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
      crossorigin="anonymous">
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+     <link rel="stylesheet" href="CSS/project1.css">
+
+     <style>
+      .jumbotron {
+          background-image: url('images/jumbotron_main_bg.jpg');
+          background-position: center;
+          background-size: cover;
+          height: 400px;       
+      }
+   </style>
 
 </head>
 <body>    
@@ -24,7 +33,7 @@
           <div class="collapse navbar-collapse" id="navbarCollapse">
               <div class="navbar-nav">
                   <a href="index.html" class="nav-item nav-link active">Home</a>
-                  <a href="hobby.html" class="nav-item nav-link">Hobby</a>
+                  <a href="hobby.html" class="nav-item nav-link">Hobby's</a>
                   <a href="interesses.html" class="nav-item nav-link">Interesses</a>
                   <a href="ervaring.html" class="nav-item nav-link">Ervaring</a>
                   <a href="cv.html" class="nav-item nav-link">CV</a>
@@ -34,29 +43,55 @@
       </div>
     </nav>
 
-    <div class="main-body">
-      <h1>Titel</h1>
-      <h2>Wie ben ik?</h2>
-        <p>
-        Mijn naam is Andreas Mazzolin. Ik ben 22 jaar en ben een student graduaat programmeren
-        aan Thomas More Geel. In het secundair onderwijs heb ik Informatica gestudeerd.
-        </p>
-      <h2>Sterke en zwakke punten</h2>
-      <h3>Sterke punten</h3>
-        <p>
-        Mijn sterke punten zijn dat ik snel en graag bijleer en dit actief in mijn vrije tijd doe. Daarnaast
-        ben ik vaak met informatica bezig in mijn vrije tijd, dus leer ik vaak
-        nieuwe en actuele zaken bij. Ook ben ik altijd stipt en respecteer ik de deadlines.
-        </p>
-      <h3>Zwakke punten</h3>
-        <p>
-            Mijn zwakste punt is dat ik snel stress en/of angst krijg van bepaalde opdrachten,
-            dit heeft meestal geen invloed op mijn werk maar is vervelend voor mijn
-            mindset. Verder neem ik niet vaak initiatief om de leiding te nemen of taken te verdelen.
-        </p>     
-      <h2><a href="hobby.html" class="link">Mijn hobby's</a></h2>
-      <h2><a href="interesses.html" class="link">Mijn interesses</a></h2>
-      <h2><a href="ervaring.html" class="link">Relevante ervaring</a></h2>
+    <div class="jumbotron">
+      <h1 class="display-4">Welkom!</h1>
+      <p class="lead">Mijn naam is Andreas Mazzolin en dit is mijn portfolio!</p>
+      <p>Ik ben een student graduaat programmeren aan Thomas More Geel.
+          Op deze website kan je allerlei informatie over mij vinden zoals mijn interesses en mijn ervaring binnen informatica.</p>
+      <p>Heb je nog vragen of heb ik iets gemist? Aarzel dan niet om mij te contacteren via de volgende knop!</p>
+      <p class="lead">
+        <a class="btn btn-lg contact-btn" href="contact.html" role="button">Contacteer mij!</a>
+      </p>
+    </div>
+
+      <div class="row">
+        <div class="col-md-4">
+            <div class="grid-item-index">
+                <div class="card border-0">
+                    
+                    <a href="hobby.html"><img class="card-img" src="./images/hobby_main.jpg" alt="Mijn hobby's"></a>
+                    <div class="card-body">
+                      <h5 class="card-title">Mijn hobby's</h5>
+                      <p class="card-text">Klik op de afbeelding om meer over mijn hobby's te weten.</p>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+          <div class="grid-item-index">
+              <div class="card border-0">                  
+                  <a href="interesses.html"><img class="card-img" src="./images/interesses_main.jpg" alt="Mijn interesses"></a>
+                  <div class="card-body">
+                    <h5 class="card-title">Mijn interesses</h5>
+                    <p class="card-text">Klik op de afbeelding om meer over mijn interesses te weten.</p>
+                    
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="grid-item-index">
+              <div class="card border-0">                  
+                  <a href="ervaring.html"><img class="card-img" src="./images/ervaring-main.jpg" alt="Mijn ervaring"></a>
+                  <div class="card-body">
+                    <h5 class="card-title">Mijn ervaring</h5>
+                    <p class="card-text">Klik op de afbeelding om meer over mijn ervaring binnen informatica te weten.</p>
+                    
+                  </div>
+              </div>
+          </div>
+        </div>
     </div>
 
     <footer class="footer">   
