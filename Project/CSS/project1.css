@@ -221,3 +221,17 @@ li a:hover:not(.active) {
 .contact-title {
     text-align: center;
 }
+
+
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
+.carousel-caption {
+    color: black;
+}
+.alt-color {
+    color: white;
+}
+
+
