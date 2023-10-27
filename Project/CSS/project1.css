@@ -223,6 +223,9 @@ li a:hover:not(.active) {
 .contact-title {
     text-align: center;
 }
+input::placeholder {
+    opacity: 1;
+}
 
 
 .carousel-item img {
@@ -303,6 +306,24 @@ li a:hover:not(.active) {
 .competenties {
     text-align: center;
 }
+
+#myAccordion > * {
+    background-color: #343434;
+    color: #fff;
+    border: none;
+}
+.card-body {
+    background-color: #343434;
+    border: none;
+}
+.accordion-button {
+    background-color: #36454F;
+    color: #fff;
+    border: none;
+}
+
+
+
     
 
 
