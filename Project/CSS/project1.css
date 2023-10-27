@@ -1,5 +1,6 @@
 * {
     font-family: 'Gandhi Sans', sans-serif;
+    box-sizing: border-box;
     
     
 }
@@ -102,6 +103,7 @@ table#studieErvaring th{
     overflow: hidden;
     background-color: #343434;
     display: block;
+    text-align: center;
 
 }
 .cv li {
@@ -233,5 +235,74 @@ li a:hover:not(.active) {
 .alt-color {
     color: white;
 }
+
+
+.container-cv {
+    margin: 50px auto; 
+    max-width: 960px; 
+    padding: 40px;
+    text-align: center;
+     
+}
+
+.slider {
+    width: 100%;
+    margin: 50px auto;       
+}
+
+.slick-slide {
+      margin: 0px 20px;     
+}
+
+.slick-slide img {
+    width: 100%;   
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+
+
+.slick-slide {
+    transition: all ease-in-out .3s;
+}
+.grid-item-cv {
+    margin-bottom: 20px;
+}
+.cv-card-title {
+    text-align: center;
+    text-decoration: underline;
+}
+    
+.table-striped>tbody>tr:nth-child(odd)>td, 
+.table-striped>tbody>tr:nth-child(odd)>th 
+{
+    background-color: #343434;
+    color: #fff;
+}
+
+.table-striped>tbody>tr:nth-child(even)>td, 
+.table-striped>tbody>tr:nth-child(even)>th 
+{
+    background-color: #36454F;
+    color: #fff;
+}
+.table-striped {
+    width: 80%;
+    margin: auto;
+}
+
+.cv-caption {
+    margin: 10px;
+    padding: 5px;
+    font-size: 28px;
+    text-align: center;
+    color: #fff;
+}
+.competenties {
+    text-align: center;
+}
+    
 
 
