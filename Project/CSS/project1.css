@@ -323,11 +323,21 @@ input::placeholder {
     border: none;
     border-radius: 15px;
     padding: 20px;
+    color: #fff;
 }
 .accordion-button {
     background-color: #36454F;
     color: #fff;
     border: none;
+}
+.form-control::placeholder{
+    color: #fff;
+}
+.navbar-brand {
+    color: #fff;
+}
+.navbar-brand:hover {
+    color: #fff;
 }
 
 
