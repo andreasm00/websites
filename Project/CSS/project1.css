@@ -313,8 +313,16 @@ input::placeholder {
     border: none;
 }
 .card-body {
-    background-color: #343434;
+    background-color: #36454F;
     border: none;
+    border-radius: 0px 0px 20px 20px;
+    margin-bottom: 40px;
+}
+.card-body-cv {
+    background-color: #36454F;
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
 }
 .accordion-button {
     background-color: #36454F;
